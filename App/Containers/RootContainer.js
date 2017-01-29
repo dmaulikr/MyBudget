@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, StatusBar } from 'react-native';
+import NavigationRouter from '../Navigation/NavigationRouter';
 
 class RootContainer extends Component {
   render () {
     return (
-      <View>
-        <Text>Test</Text>
+      <View style={{flex: 1}}>
+        <StatusBar />
+        <NavigationRouter />
       </View>
-    )
+    );
   }
 }
 
