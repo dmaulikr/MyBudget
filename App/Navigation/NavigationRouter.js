@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
-import { Scene, Router } from 'react-native-router-flux';
+import { StackNavigator } from 'react-navigation';
 
 // screens
 import Dashboard from '../Containers/Dashboard';
 
-class NavigationRouter extends Component {
-  render() {
-    return (
-      <Router>
-        <Scene key='root'>
-          <Scene initial key='dashboard' component={Dashboard} title='Dashboard' />
-        </Scene>
-      </Router>
-    );
-  }
-}
+const Navigator = StackNavigator({
+  dashboard: { screen: Dashboard }
+}, {
+  initialRouteName: 'dashboard'
+});
 
-export default NavigationRouter;
+export default Navigator;

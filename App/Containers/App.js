@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { View, Text } from 'react-native';
 import createStore from '../Redux';
 import RootContainer from './RootContainer';
 
